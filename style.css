@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:wght@400;500;600;700;&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+body {
+    background-image: url(./bg-intro-desktop.png);
+    /*background-position: center; */
+    background-color: hsl(0, 100%, 74%);
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-height: 100vh;
+    transition: all 0.5s ease-in-out;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.text-box {
+    padding-right: 50px;
+    width: 100%;
+}
+
+.text-box h1 {
+    color: white;
+    padding-bottom: 20px;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+
+.text-box p {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+}
+  
+span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+span:nth-child(1) {
+    animation: fade-in 3s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) {
+    animation: fade-in 3s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) {
+    animation: fade-in 3s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(4) {
+    animation: fade-in 3s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(5) {
+    animation: fade-in 3s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(6) {
+    animation: fade-in 3s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(7) {
+    animation: fade-in 3s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(8) {
+    animation: fade-in 3s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(9) {
+    animation: fade-in 3s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(10) {
+    animation: fade-in 3s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  
+
+.login {
+    width: 100%;
+}
+
+.text-box i {
+    color: red;
+    border-image-source: none;
+    background-image: url(./icon-error.svg);
+
+}
+
+
+.free-trial {
+    margin-bottom: 1.5rem;
+    background-color: blue;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    min-width: 100%;
+    cursor: pointer;
+    box-shadow: var(--box-shadow) 0px 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.free-trial:hover {
+    background-color: var(--dark-blue);
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: var(--box-shadow) 0px 5px;
+    width: 100%;
+}
+
+
+input {
+    width: 100%;
+    /*height: 40px; */
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    outline: none; /*hsl(0, 100%, 74%); */
+    border-color: 1px solid hsl(0, 100%, 74%);
+    resize: vertical;
+    box-sizing: border-box;
+
+}
+input:focus {
+    border: 1px solid  var(--greyish-blue);
+  }
+  button {
+    padding: 10px;
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button hover {
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+}
+
+form p {
+    text-align: center;
+    flood-color: beige;
+}
+.input-box {
+    line-height: 70px; 
+    display: block;
+    position:relative;
+}
+
+.input-box p {
+    color: azure;
+}
+
+.form action.input-box {
+    border-color: red;
+}
+.input-box small {
+    visibility: hidden;
+    position: absolute;
+    right: 5px;
+    bottom: -20px;
+    color: var(--red);
+    font-size: 0.6em;
+    font-style: italic;
+  }
+
+.input-box.error i,
+.input-box.error small {
+    visibility: visible;
+    border-color: red;
+}
+
+.input-box.success input {
+    border-color: green;
+}
+
+
+
+
+/*.terms span {
+    color: hsl(0, 100%, 74%);
+}  */
+a {
+    text-decoration: none;
+    color: red;
+}
+
+.terms {
+    font-size: 0.6rem;
+    color: lightslategray;
+    margin-top: 10px;
+}
+
+@media (max-width : 992px) {
+    body {
+        background-image: url(./bg-intro-mobile-12.png);
+        background-position: center;
+        background-size: cover;
+        background-color: hsl(0, 100%, 74%);
+        text-align: center;
+        margin: 20% 10%;
+    }
+
+    main {
+        height: auto;
+        display: block;
+
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    /*.flex-box {
+        flex-direction: column;
+        justify-content: space-between;
+    }  */
+
+    .text-box {
+        padding-right: 0;
+        margin-bottom: 5rem;
+    }
+
+    .login {
+        width: 100%;
+    }
+
+
+    form {
+        padding: 20px;
+    }
+
+
+}
