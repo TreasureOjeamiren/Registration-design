@@ -3,4 +3,4 @@
 # Zuri internship 
 
 View Live Page :
-https://treasureojeamiren.github.io/Registration-desig
+https://treasureojeamiren.github.io/Registration-design/
